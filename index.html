@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="devchallenges.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="heading-primary">Checkout</h1>
+      <form class="checkout">
+        <div class="payment">
+          <div class="items">
+            <div class="item">
+              <img
+                src="/assets/img/photo1.png"
+                alt="Product image"
+                class="item-img"
+              />
+              <div class="item-info">
+                <div class="item-info-top">
+                  <span class="item-name">Vintage Backbag</span>
+                  <div class="item-price">
+                    <span class="price-discount">$54.99</span>
+                    <span class="price-main">$94.99</span>
+                  </div>
+                </div>
+                <div class="input-container">
+                  <img
+                    src="/assets/icons/remove_black_24dp.svg"
+                    class="before"
+                  />
+                  <input type="number" min="0" class="item-count" />
+                  <img src="/assets/icons/add_black_24dp.svg" class="after" />
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img
+                src="/assets/img/photo2.png"
+                alt="Product image"
+                class="item-img"
+              />
+              <div class="item-info">
+                <div class="item-info-top">
+                  <span class="item-name">Levi Shoes</span>
+                  <div class="item-price">
+                    <span class="price-discount">$74.99</span>
+                    <span class="price-main">$124.99</span>
+                  </div>
+                </div>
+                <div class="input-container">
+                  <img
+                    src="/assets/icons/remove_black_24dp.svg"
+                    class="before"
+                  />
+                  <input type="number" min="0" class="item-count" />
+                  <img src="/assets/icons/add_black_24dp.svg" class="after" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="payment-bill">
+            <div class="bill">
+              <span class="bill-text">Shipping</span>
+              <span class="bill-price">$19</span>
+            </div>
+            <div class="bill">
+              <span class="bill-text">Total</span>
+              <span class="bill-price">$148.98</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="info">
+            <h2 class="heading-secondary">Contact infomation</h2>
+            <div class="contact-info">
+              <div class="input">
+                <label for="email" class="input-label">Email</label>
+                <div class="input-container">
+                  <img
+                    src="/assets/icons/email_black_24dp.svg"
+                    alt="Email icon"
+                    class="input-icon"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Enter your email.."
+                    class="input-type"
+                    id="email"
+                  />
+                </div>
+              </div>
+              <div class="input">
+                <label for="phone" class="input-label">Phone</label>
+                <div class="input-container">
+                  <img
+                    src="/assets/icons/call_black_24dp.svg"
+                    alt="Phone icon"
+                    class="input-icon"
+                  />
+                  <input
+                    type="tel"
+                    placeholder="Enter your phone.."
+                    class="input-type"
+                    id="phone"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="address">
+            <h2 class="heading-secondary">Shipping address</h2>
+            <div class="contact-address">
+              <div class="input">
+                <label for="name" class="input-label">Full name</label>
+                <div class="input-container">
+                  <img
+                    src="/assets/icons/account_circle_black_24dp.svg"
+                    alt="Account icon"
+                    class="input-icon"
+                  />
+                  <input
+                    type="email"
+                    value="Rodney Cotton"
+                    class="input-type"
+                    id="name"
+                  />
+                </div>
+              </div>
+              <div class="input">
+                <label for="address" class="input-label">Address</label>
+                <div class="input-container">
+                  <img
+                    src="/assets/icons/home_black_24dp.svg"
+                    alt="Address icon"
+                    class="input-icon"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Your address.."
+                    class="input-type"
+                    id="address"
+                  />
+                </div>
+              </div>
+              <div class="input">
+                <label for="city" class="input-label">City</label>
+                <div class="input-container">
+                  <img
+                    src="/assets/icons/location_city_black_24dp.svg"
+                    alt="Location icon"
+                    class="input-icon"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Your city.."
+                    class="input-type"
+                    id="city"
+                  />
+                </div>
+              </div>
+              <div class="input-flex">
+                <div class="input">
+                  <label for="country" class="input-label">Country</label>
+                  <div class="input-container">
+                    <img
+                      src="/assets/icons/location_city_black_24dp.svg"
+                      alt="Location icon"
+                      class="input-icon"
+                    />
+                    <select class="input-type select" id="country">
+                      <option value="" disabled selected hidden>
+                        Your Country..
+                      </option>
+                      <option value="sd">Sudan</option>
+                      <option value="ksa">Saudi Arabia</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="input">
+                  <label for="postal" class="input-label">Postal code</label>
+                  <div class="input-container">
+                    <img
+                      src="/assets/icons/markunread_mailbox_black_24dp.svg"
+                      alt="Location icon"
+                      class="input-icon"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Your postal code.."
+                      class="input-type"
+                      id="postal"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox" class="checkbox" />
+                <label for="checkbox" class="checkbox-label"
+                  >Save this information for next time</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn">Continue</button>
+      </form>
+    </main>
+    <footer class="footer">
+      created by <strong>Mohammed Modather</strong> - devChallenges.io
+    </footer>
+  </body>
+</html>
